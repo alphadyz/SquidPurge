@@ -1,3 +1,13 @@
+History
+=======
+
+This util was previously at:
+http://www.wa.apana.org.au/~dean/squidpurge/
+
+but the site was taken offline and appears that the code was abandoned. I
+managed to grab the sources via archive.org and change them to compile. The
+resulting binary works for me on centos 6 x86_64. YMMV.
+
 purge
 =====
 
