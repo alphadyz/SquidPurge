@@ -111,7 +111,7 @@ ifeq (6,${LIBCVER})
 SOCKLEN	= size_t
 endif
 CXXFLAGS += -DHAS_PSIGNAL -DLIBCVERSION=$(LIBCVER) -pipe # -Wall -pedantic
-OPT_NORM = -march=pentium -O2
+OPT_NORM = -O2
 # if your g++ balks (e.g. SuSE still uses 2.7.2.3)
 #CXXFLAGS += -DHAS_PSIGNAL -DLIBCVERSION=$(LIBCVER) -m486
 LD	= $(CC)

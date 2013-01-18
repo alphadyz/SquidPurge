@@ -132,7 +132,7 @@ copy_out( size_t filesize, size_t metasize, unsigned debug,
   static const char* index = "index.html";
   
   // find hostname part after the scheme (okok, not counting port, etc.)
-  char* ptr = strstr( url, "://" );
+  char* ptr = (char*) strstr( url, "://" );
   if ( ptr == 0 || strlen(ptr) < 4 ) return false;
 
   // create filename to store contents into

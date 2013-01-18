@@ -108,7 +108,7 @@ my_sock_fd2a( int fd, SockAddress buffer, bool peer )
   //          Refer to errno in case of error (usually unconnected fd...)
 {
   struct sockaddr_in socket;
-  SOCKLEN len = sizeof(socket);
+  socklen_t len = sizeof(socket);
 
   if ( (peer ? getpeername( fd, (SA*) &socket, &len ) :
 	getsockname( fd, (SA*) &socket, &len )) == -1 )
